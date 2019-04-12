@@ -20,7 +20,7 @@ mongoose.connect('mongodb+srv://database:mtgdatabase@cluster0-bhc5y.mongodb.net/
     useNewUrlParser: true
 });
 
-app.user((req, res) => {
+app.use((req, res) => {
     req.io = io;
 
     return next();
